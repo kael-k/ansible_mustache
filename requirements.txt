@@ -1,0 +1,2 @@
+ansible-core~=2.9
+pystache~=0.5.4
