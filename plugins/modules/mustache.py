@@ -34,14 +34,14 @@ requirements:
 '''
 
 EXAMPLES = '''
-# Render an "Hello world!" 
+# Render an "Hello world!"
 - kael_k.ansible_mustache.mustache:
     template: "{{ greetings }} {{ target }}!"
     values:
         greetings: Hello
         target: world
 
-# Since is strict validation on missing tag is enabled and 
+# Since is strict validation on missing tag is enabled and
 # target is not defined in values, this task will fail
 - kael_k.ansible_mustache.mustache:
     template: "{{ greetings }} {{ target }}!"
@@ -57,7 +57,7 @@ success:
     type: bool
 rendered_template:
     description: contains the output of the template rendering
-    returned: only if success is True 
+    returned: only if success is True
     type: str
 '''
 
